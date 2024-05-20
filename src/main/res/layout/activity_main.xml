@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editTextCodigo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Código do Ingresso" />
+
+    <EditText
+        android:id="@+id/editTextValor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Valor do Ingresso"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/editTextTaxa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Taxa de Conveniência"
+        android:inputType="numberDecimal" />
+
+    <CheckBox
+        android:id="@+id/checkBoxVIP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VIP" />
+
+    <EditText
+        android:id="@+id/editTextFuncao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Função (apenas VIP)"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/buttonComprar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Comprar" />
+</LinearLayout>
